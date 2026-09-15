@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title description">
+  <title id="title">Elden Ring CrossOver Ultrawide</title>
+  <desc id="description">A gold ring over an ultrawide display with the words Native 21:9 on macOS.</desc>
+  <defs>
+    <radialGradient id="background" cx="50%" cy="42%" r="75%">
+      <stop offset="0" stop-color="#243028"/>
+      <stop offset="0.52" stop-color="#101512"/>
+      <stop offset="1" stop-color="#050706"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff1b0"/>
+      <stop offset="0.32" stop-color="#d8b35b"/>
+      <stop offset="0.7" stop-color="#8e6428"/>
+      <stop offset="1" stop-color="#f0d485"/>
+    </linearGradient>
+    <linearGradient id="landscape" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#324a45"/>
+      <stop offset="0.55" stop-color="#17231f"/>
+      <stop offset="1" stop-color="#080b09"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" seed="12" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1280" height="640" rx="32" fill="url(#background)"/>
+  <rect width="1280" height="640" rx="32" filter="url(#grain)" opacity="0.7"/>
+  <g opacity="0.46" fill="#0a0d0b">
+    <path d="M0 430 120 335 230 410 352 270 470 400 610 250 758 405 900 290 1010 395 1150 300 1280 405V640H0Z"/>
+    <path d="M0 485 180 385 330 455 510 330 690 465 860 355 1020 455 1160 385 1280 450V640H0Z" opacity="0.72"/>
+  </g>
+  <rect x="90" y="96" width="1100" height="448" rx="30" fill="#050706" stroke="#76623a" stroke-width="3"/>
+  <rect x="112" y="118" width="1056" height="404" rx="18" fill="url(#landscape)" stroke="#b28d42" stroke-opacity="0.32"/>
+  <path d="M112 428 250 338 390 407 548 270 680 414 845 310 980 408 1110 335 1168 374V522H112Z" fill="#0b100d" opacity="0.9"/>
+  <g transform="translate(640 246)" fill="none" stroke="url(#gold)" filter="url(#glow)">
+    <ellipse rx="92" ry="104" stroke-width="5" opacity="0.86"/>
+    <ellipse rx="71" ry="92" stroke-width="2" opacity="0.62" transform="rotate(19)"/>
+    <ellipse rx="72" ry="94" stroke-width="1.5" opacity="0.44" transform="rotate(-22)"/>
+  </g>
+  <text x="640" y="374" text-anchor="middle" fill="#f2e6bf" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="56" font-weight="700" letter-spacing="7">ELDEN RING</text>
+  <text x="640" y="424" text-anchor="middle" fill="#d8b35b" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="27" font-weight="600" letter-spacing="6">CROSSOVER ULTRAWIDE</text>
+  <text x="640" y="468" text-anchor="middle" fill="#b9c1ba" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="20" letter-spacing="1.2">NATIVE 21:9 ON macOS · NO COMPANION APP</text>
+  <g font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle">
+    <rect x="365" y="570" width="156" height="38" rx="19" fill="#d8b35b" fill-opacity="0.13" stroke="#d8b35b" stroke-opacity="0.52"/>
+    <text x="443" y="595" fill="#e8d399">APPLE SILICON</text>
+    <rect x="542" y="570" width="196" height="38" rx="19" fill="#d8b35b" fill-opacity="0.13" stroke="#d8b35b" stroke-opacity="0.52"/>
+    <text x="640" y="595" fill="#e8d399">3440 × 1440 TESTED</text>
+    <rect x="759" y="570" width="156" height="38" rx="19" fill="#d8b35b" fill-opacity="0.13" stroke="#d8b35b" stroke-opacity="0.52"/>
+    <text x="837" y="595" fill="#e8d399">FAIL-CLOSED</text>
+  </g>
+</svg>
+

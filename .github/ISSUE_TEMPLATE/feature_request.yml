@@ -1,0 +1,28 @@
+name: Feature request
+description: Suggest a scoped improvement to portability, safety, or documentation
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What user problem or unsupported configuration does this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Describe the smallest safe change that would help.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety boundary
+      options:
+        - label: This request does not require copyrighted game files, credentials, cheating, or online/EAC bypass guidance.
+          required: true
+

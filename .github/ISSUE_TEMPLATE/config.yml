@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and verified configurations
+    url: https://github.com/IgnazioDS/elden-ring-crossover-ultrawide/discussions
+    about: Ask setup questions or share a successful Mac/CrossOver/display configuration.
+  - name: Private security report
+    url: https://github.com/IgnazioDS/elden-ring-crossover-ultrawide/security/advisories/new
+    about: Report a security vulnerability privately.
+
