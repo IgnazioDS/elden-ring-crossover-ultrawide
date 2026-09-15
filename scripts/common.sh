@@ -12,7 +12,7 @@ fail()
 
 project_root()
 {
-    CDPATH= cd -- "$(dirname -- "$0")/.." && pwd -P
+    CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd -P
 }
 
 find_crossover_wine()
@@ -39,7 +39,7 @@ validate_bottle()
 {
     requested=$1
     [ -d "$requested" ] || fail "Bottle directory not found: $requested"
-    resolved=$(CDPATH= cd -- "$requested" && pwd -P)
+    resolved=$(CDPATH='' cd -- "$requested" && pwd -P)
     [ "$resolved" != '/' ] || fail 'Refusing to use the filesystem root as a bottle.'
     [ -f "$resolved/$GAME_RELATIVE/eldenring.exe" ] || \
         fail "Elden Ring was not found in the standard Steam location inside: $resolved"
@@ -55,7 +55,7 @@ discover_bottle()
     if [ -d "$standard_root" ]; then
         for candidate in "$standard_root"/*
         do
-            resolved_candidate=$(CDPATH= cd -- "$candidate" 2>/dev/null && pwd -P) || continue
+            resolved_candidate=$(CDPATH='' cd -- "$candidate" 2>/dev/null && pwd -P) || continue
             if [ -f "$resolved_candidate/$GAME_RELATIVE/eldenring.exe" ]; then
                 printf '%s\n' "$resolved_candidate/$GAME_RELATIVE/eldenring.exe" >> "$result_file"
             fi
@@ -68,7 +68,7 @@ discover_bottle()
         if [ -d "$custom_root" ]; then
             for candidate in "$custom_root"/*
             do
-                resolved_candidate=$(CDPATH= cd -- "$candidate" 2>/dev/null && pwd -P) || continue
+                resolved_candidate=$(CDPATH='' cd -- "$candidate" 2>/dev/null && pwd -P) || continue
                 if [ -f "$resolved_candidate/$GAME_RELATIVE/eldenring.exe" ]; then
                     printf '%s\n' "$resolved_candidate/$GAME_RELATIVE/eldenring.exe" >> "$result_file"
                 fi

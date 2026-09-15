@@ -2,8 +2,8 @@
 
 set -eu
 
-SCRIPT_DIRECTORY=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)
-# shellcheck source=common.sh
+SCRIPT_DIRECTORY=$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd -P)
+# shellcheck source=scripts/common.sh
 . "$SCRIPT_DIRECTORY/common.sh"
 
 BOTTLE_PATH=''
