@@ -20,6 +20,9 @@ running through [CrossOver](https://www.codeweavers.com/crossover) on macOS.
 It removes the 16:9 pillarboxing at 21:9 resolutions such as **3440×1440**
 without keeping Flawless Widescreen or another companion application running.
 
+The banner uses the Elden Ring image supplied by the repository owner. It is
+not AI-generated; only crop, tonal adjustment and typography were applied.
+
 The installed Steam executable is never modified. The launcher validates a
 known-safe signature, patches a temporary copy, starts the game, and removes
 that copy when you quit.
