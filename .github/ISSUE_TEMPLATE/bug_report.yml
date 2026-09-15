@@ -1,0 +1,40 @@
+name: Compatibility report
+description: Report a safe-launch or ultrawide compatibility problem
+title: "[Compatibility]: "
+labels:
+  - compatibility
+body:
+  - type: markdown
+    attributes:
+      value: Do not upload Elden Ring executables, save files, or Steam account data.
+  - type: input
+    id: game-version
+    attributes:
+      label: Elden Ring version
+    validations:
+      required: true
+  - type: input
+    id: executable-hash
+    attributes:
+      label: Clean eldenring.exe SHA-256
+    validations:
+      required: true
+  - type: input
+    id: crossover-version
+    attributes:
+      label: CrossOver version
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS and Mac model
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Launcher log and observed behavior
+    validations:
+      required: true
+

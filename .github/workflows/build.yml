@@ -1,0 +1,30 @@
+name: Build and validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  shellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ShellCheck
+        run: sudo apt-get update && sudo apt-get install -y shellcheck
+      - name: Check scripts
+        run: shellcheck scripts/*.sh scripts/*.command
+
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Build launcher
+        run: dotnet build src/EldenRingUltrawideLauncher.csproj --configuration Release
+      - uses: actions/upload-artifact@v4
+        with:
+          name: EldenRingUltrawideLauncher
+          path: src/bin/Release/net48/EldenRingUltrawideLauncher.exe
+
