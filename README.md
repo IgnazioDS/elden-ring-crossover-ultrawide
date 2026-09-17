@@ -13,6 +13,7 @@
   <a href="https://github.com/IgnazioDS/elden-ring-crossover-ultrawide/actions/workflows/build.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/IgnazioDS/elden-ring-crossover-ultrawide/build.yml?branch=main&style=flat-square"></a>
   <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/github/license/IgnazioDS/elden-ring-crossover-ultrawide?style=flat-square"></a>
   <a href="https://github.com/IgnazioDS/elden-ring-crossover-ultrawide/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/IgnazioDS/elden-ring-crossover-ultrawide?style=flat-square"></a>
+  <a href="https://github.com/sponsors/IgnazioDS"><img alt="Sponsor this project" src="https://img.shields.io/badge/Sponsor-%E2%99%A5-ea4aaa?style=flat-square&logo=githubsponsors"></a>
 </p>
 
 This open-source Elden Ring ultrawide fix targets the Windows Steam version
@@ -201,6 +202,15 @@ The tested 8.7 KB binary in `dist/` has SHA-256:
 - See [CONTRIBUTING.md](CONTRIBUTING.md) for safe patch-profile requirements.
 - Use the ready-made, factual copy in [docs/SHARING.md](docs/SHARING.md) when
   sharing with a community whose rules permit it.
+
+## Support maintenance
+
+This project is free and open source. If it saved you time and you would like
+to help fund compatibility testing, game-update maintenance and clearer setup
+guides, you can [sponsor the project on GitHub](https://github.com/sponsors/IgnazioDS).
+
+Sponsorship is optional and does not affect access to releases, support or
+project features.
 
 ## Privacy, copyright and trademarks
 
